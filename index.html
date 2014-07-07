@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/typeplate.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+	<script type="orange" id="mytemplate">
+		<div class = 'dynamic'>
+			<p>Name: <%= name %> <br/>
+			Picture URL: <%= avatar_url %> <br/>
+			Github Page: <%= html_url %> <br/>
+			Hireable: <%= hireable %> <br/>
+			Location: <%= location %> <br/>
+			Followers: <%= followers %> <br/>
+			Following: <%= following %> <br/>
+			Email: <%= email %></p> <br/>
+			<div class="next_arrow"></div>
+			<div class="prev_arrow"></div>
+		</div>
+	</script>
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+</body>
+</html>
