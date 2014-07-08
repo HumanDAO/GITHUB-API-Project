@@ -17,6 +17,7 @@ Pushing to Github:
 Branching in Github:
 
 1. git branch
-2. git checkout -b gh-branch (or new branch) //creates a new branch and allows it to be viewed as webpage pucblicly.
-3. git push origin gh-pages // push new brnach gh-pages to origin
-4. git merge master // merges a branch back to master
+2. git merge master // merges a branch back to master
+3. git checkout -b gh-branch (or new branch) //creates a new branch and allows it to be viewed as webpage pucblicly.
+4. git push origin gh-pages // push new brnach gh-pages to origin
+
