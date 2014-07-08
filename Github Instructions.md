@@ -12,7 +12,7 @@ Pushing to Github:
 5. git add --all
 6. git commit -am " ... "
 7. git push
-----
+
 
 Branching in Github:
 
