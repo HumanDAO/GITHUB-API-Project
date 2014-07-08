@@ -1,5 +1,6 @@
 var i = 0;
 var github_username = [];
+//var person_info;
 
 $(function() {
     update();
@@ -22,7 +23,7 @@ function update() {
         $(".card").remove();
         $('body').append(github_html);
         return data;
-    }).then(hireable(data)).then(bindEventstoArrows);
+    }).then(hireable).then(bindEventstoArrows);
 };
 
 function bindEventstoArrows() {
@@ -38,7 +39,6 @@ function next_person() {
     } else {
         i += 1;
     }
-	console.log(i);
 	update();
 }
 
@@ -48,10 +48,14 @@ function prev_person() {
     } else {
         i -= 1;
     }
-    console.log(i);
     update();
 }
 
 function hireable(data){
-    console.log(data);
+    if (data.hireable){
+        $('.hire').html("<p>Ready to work!</p>");
+    }
+    else{
+        $('.hire').html("<p>Hired already!</p>");
+    }
 }

@@ -14,6 +14,7 @@
  *, *:after, *:before {
     box-sizing:border-box;
     -webkit-box-sizing: border-box;
+    -webkit-transition: all 1s ease;
 }
 
 body {
@@ -81,7 +82,9 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
 } 
-
+.general .hire{
+  height: 50px;
+}
 .followers{
   margin-left: 15px;
   margin-right: 7px;
