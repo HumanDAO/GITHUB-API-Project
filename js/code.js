@@ -18,14 +18,17 @@ function update() {
 
     person_info.then(function(data) {
         var github_html = fillTemplate(data);
-        $(".dynamic").remove();
+        /*$(".dynamic").remove();*/
+        $(".card").remove();
         $('body').append(github_html);
     }).then(bindEventstoArrows);
 };
 
 function bindEventstoArrows() {
-    	document.querySelector('.next_arrow').addEventListener('click', next_person);
-    	document.querySelector('.prev_arrow').addEventListener('click', prev_person);
+    	/*document.querySelector('.next_arrow').addEventListener('click', next_person);
+    	document.querySelector('.prev_arrow').addEventListener('click', prev_person);*/
+        document.querySelector('.triangle-right').addEventListener('click', next_person);
+        document.querySelector('.triangle-left').addEventListener('click', prev_person);
 }
 
 function next_person() {
