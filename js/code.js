@@ -21,7 +21,8 @@ function update() {
         /*$(".dynamic").remove();*/
         $(".card").remove();
         $('body').append(github_html);
-    }).then(bindEventstoArrows);
+        return data;
+    }).then(hireable(data)).then(bindEventstoArrows);
 };
 
 function bindEventstoArrows() {
@@ -49,4 +50,8 @@ function prev_person() {
     }
     console.log(i);
     update();
+}
+
+function hireable(data){
+    console.log(data);
 }

@@ -3,11 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="./js/..."></script>
-	<link rel="stylesheet" href="./stylesheets.css">
-	
-
-	<title>Document</title>
+	<title>Github Card</title>
 </head>
 <body>
 	
@@ -36,10 +32,11 @@
 
 	  <div class="card">
         <div class="main">
-            <img src="<%= avatar_url %>">
+            <img class="blur" src="<%= avatar_url %>">
+            <img class="small" src="<%= avatar_url %>">
             <div class="triangle-left"></div>
             <div class="triangle-right"></div>
-            <a href="<%= email %>" target="_blank">
+            <a href="<%= html_url %>" target="_blank">
                 <div class="button">
                     <p>follow</p>
                 </div>
@@ -53,12 +50,8 @@
         </div>
         <div class="info">
             <div class="general">
-                <p>Ready to work!
-                    <%=hireable %>
-                </p>
-                <p>
-                    <%=location %>
-                </p>
+                <p>Ready to work! <%=hireable %>
+                <%=location %></p>
             </div>
             <div class="followers">
                 <div class="numberFollow">
