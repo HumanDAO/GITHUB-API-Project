@@ -43,7 +43,7 @@ body {
 }
 .info{
   width: 680px;
-  height: 150px;
+  height: 100px;
   background-color: #F2F2F2;
   font-size: 0;
 }
@@ -52,31 +52,53 @@ body {
   height: 100%;
   display: inline-block;
   vertical-align: top;
-  font-size: 0;
+  /*font-size: 0;*/
+
 }
 .general p {
   color: grey;
-  padding: 10px;
+  padding: 18px;
+  text-align: left;
   font-size: 2rem;
   line-height: .5rem;
-}  
+  /*top: 40px;*/
+} 
+
 .followers{
-  margin-left: 32px;
+
+  margin-left: 15px;
   margin-right: 7px;
 }
 .followers, .following{
+
 	width: 22%;
-  height: 100%;
+  height: 120%;
+  border-radius: 20px;
   background-color: lightgrey;
   display: inline-block;
-  vertical-align: top;
+  /*vertical-align: top;*/
   text-align: center;
 }
-.followers p, .following p{
+.followers p {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0 0 0 0;
   width: 100%;
+  position: absolute;
+  top: 77%;
+  left: 90px;
 }
+
+.following p{
+font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0 0 0;
+  width: 100%;
+  position: absolute; 
+  top: 77%;
+  left: 245px;
+}
+
 .numberFollow{
   color: #44B3E8;
   font-size: 5rem;
@@ -84,7 +106,7 @@ body {
 }
 .button{
   width: 140px;
-  height: 40px;
+  height: 50px;
   background-color: #44B3E8;
   border: 4px solid #1A81AF;
   border-radius: 5px;
@@ -96,7 +118,7 @@ body {
   color: white;
   font-size: 1.5rem;
   position: absolute;
-  top: 5px;
+  top: 0px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -110,9 +132,13 @@ body {
   vertical-align: top;
   color: white;
   font-size: 2rem;
-  
 }
-.email{
+
+.name p{
+  margin: 0 0 0 0;
+}
+
+/*.email{
   position: absolute;
   bottom: 40px;
   right: 20px; 
@@ -121,12 +147,13 @@ body {
   width: 40px;
   height: 40px;
   background-color: white;
-}
+}*/
+
 .triangle-right {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
-	border-left: 50px solid white;
+	border-left: 50px solid black;
 	border-bottom: 50px solid transparent;
   position: absolute;
   top: 50%;
@@ -137,10 +164,14 @@ body {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
-	border-right: 50px solid white;
+	border-right: 50px solid black;
 	border-bottom: 50px solid transparent;
   position: absolute;
   top: 50%;
   left: 20px;
   -webkit-transform: translateY(-50%);
+}
+
+.triangle-left:hover, .triangle-right:hover{
+  border-radius: 120px;
 }
