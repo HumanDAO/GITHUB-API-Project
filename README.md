@@ -1,7 +1,7 @@
 Github-API-Project
 ==================
 
-Apply Airbnb Thumbnail design with GitHub Profile API
+Apply Airbnb Thumbnail design using GitHub Profile API
 
 ***
 
