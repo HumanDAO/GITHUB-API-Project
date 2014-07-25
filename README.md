@@ -1,27 +1,20 @@
-Github-API-Project
-==================
+GitHub Instructions
+===================
 
-Apply Airbnb Thumbnail design using GitHub Profile API
+Pushing to Github Repo:
 
-***
-
-Pushing to Github:
-
-1. git status
-2. Make sure it's in the right folder locally
-3. git clone url
-4. git status
-5. git add --all
-6. git commit -am " ... "
-7. git push
+1. `mkdir <name>`
+2. `git clone <url>`
+3. `git add --all`
+4. `git commit -am " <message> "`
+5. `git push`
 
 
-Branching in Github:
+Branching & creating url from gh-pages in Github:
 
-1. git branch
-2. git checkout -b gh-pages
-3. git branch
-4. git merge master <------- if you updated master
-5. git push origin gh-pages
-6. git checkout master <------- go back to master, where you make your updates to code
+1. `git branch`
+2. `git checkout -b gh-pages`
+4. `git merge master` <------- if you updated master
+5. `git push origin gh-pages`
+6. `git checkout master` <------- go back to master, where you make your updates to code
 
